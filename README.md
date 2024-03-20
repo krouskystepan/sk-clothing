@@ -1,10 +1,15 @@
 ## SK Clothing Store
 
-First, run the development server:
+### About this project
+
+ - 
+
+### How to run this project
+
+1. Install dependencies and run the dev mode
 
 ```bash
-npm i
-npm run dev
+npm i && npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
