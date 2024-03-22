@@ -22,10 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} container`}>
+      <body className={`${poppins.className} flex min-h-screen flex-col`}>
         <Navbar />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   )

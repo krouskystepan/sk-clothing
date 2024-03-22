@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function Navbar() {
   return (
-    <nav className="my-4 flex items-center justify-between">
+    <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
       <Image
         src={'/logo.png'}
         width={50}

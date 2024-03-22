@@ -11,4 +11,8 @@ export const navLinks = [
     name: 'About us',
     path: '/about',
   },
+  {
+    name: 'Contact',
+    path: '/contact',
+  },
 ]
