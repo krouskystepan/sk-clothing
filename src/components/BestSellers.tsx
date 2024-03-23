@@ -1,5 +1,5 @@
 import { getBestSellers } from '@/lib/actions/products.action'
-import Product from './shared/Product'
+import ProductCard from './shared/ProductCard'
 
 export default async function BestSellers() {
   const bestSellers = await getBestSellers()
@@ -8,14 +8,17 @@ export default async function BestSellers() {
     <section className="mx-auto mt-20  max-w-5xl ">
       <h3 className="section-heading">Buy our best-selling products</h3>
       <div className="flex grow flex-wrap justify-center gap-5">
-        {bestSellers.map((bestSeller, index) => (
-          <Product
-            key={index}
-            name={bestSeller.name}
-            rating={bestSeller.rating}
-            price={bestSeller.price}
-            imageURL={bestSeller.imageURL}
-            isBestSeller={bestSeller.isBestSeller}
+        {bestSellers.map((product, index) => (
+          <ProductCard
+            key={product.id}
+            id={product.id}
+            color={product.color}
+            name={product.name}
+            sizes={product.sizes}
+            price={product.price}
+            rating={product.rating}
+            imageURL={product.imageURL}
+            isBestSeller={product.isBestSeller}
           />
         ))}
       </div>

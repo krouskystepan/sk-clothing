@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <main className="mx-auto mt-10 max-w-3xl px-6 text-center leading-6 tracking-wide">
+    <main className="mx-auto my-10 max-w-3xl px-6 text-center leading-6 tracking-wide">
       <h3></h3>
       <p>
         Established with a firm commitment to quality and innovation, SK
@@ -25,17 +25,17 @@ export default function About() {
         <br />
         <br />
         But our dedication to quality goes beyond just the garments themselves.
-        We're also deeply committed to ethical and sustainable practices. By
-        prioritizing environmentally friendly materials and partnering with
-        suppliers who share our values, we're working towards a more sustainable
-        future for fashion.
+        We&apos;re also deeply committed to ethical and sustainable practices.
+        By prioritizing environmentally friendly materials and partnering with
+        suppliers who share our values, we&apos;re working towards a more
+        sustainable future for fashion.
         <br />
         <br />
-        At SK Clothing, we believe that fashion is more than just clothing—it's
-        a form of self-expression, a reflection of individuality. That's why
-        we're dedicated to creating collections that not only embody the latest
-        trends but also empower our customers to embrace their unique sense of
-        style.
+        At SK Clothing, we believe that fashion is more than just
+        clothing—it&apos;s a form of self-expression, a reflection of
+        individuality. That&apos;s why we&apos;re dedicated to creating
+        collections that not only embody the latest trends but also empower our
+        customers to embrace their unique sense of style.
         <br />
         <br />
         Thank you for choosing SK Clothing. Join us on our journey as we

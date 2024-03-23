@@ -11,10 +11,10 @@ export const navLinks = [
     name: 'About us',
     path: '/about',
   },
-  {
-    name: 'Contact',
-    path: '/contact',
-  },
+  // {
+  //   name: 'Contact',
+  //   path: '/contact',
+  // },
 ]
 
 export const footerLinks = [

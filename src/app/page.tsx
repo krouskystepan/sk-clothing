@@ -4,7 +4,7 @@ import NewProducts from '@/components/NewProducts'
 
 export default function Home() {
   return (
-    <main className="container flex-grow">
+    <main className="container grow">
       <Hero />
       <BestSellers />
       <NewProducts />

@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function NotFound() {
   return (
-    <section className="mt-10 flex flex-1 flex-col items-center justify-center gap-2">
+    <section className="flex flex-1 flex-col items-center justify-center gap-2">
       <h2 className="text-4xl font-bold">Not Found 404</h2>
       <p>Could not find requested resource</p>
       <Link href="/">
