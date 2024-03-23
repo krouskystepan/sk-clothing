@@ -3,13 +3,13 @@ import Image from 'next/image'
 
 export default function Hero() {
   return (
-    <div className="flex w-full gap-10">
+    <div className="mt-[2rem] flex w-full gap-10">
       <div className="flex aspect-square w-1/2 flex-col items-start gap-5">
-        <h1 className="mt-10 text-7xl font-bold">Lorem, ipsum dolor.</h1>
+        <h1 className="mt-10 text-6xl font-bold">Welcome to SK Clothing</h1>
         <p className="text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis
-          exercitationem temporibus beatae architecto minima ratione incidunt
-          rerum consectetur ullam ea.
+          We are a shop that manufactures and procures everything ourselves. We
+          strive for the highest and fastest quality and delivery of our
+          products
         </p>
         <Button variant="default" className="px-6 py-5">
           Shop now

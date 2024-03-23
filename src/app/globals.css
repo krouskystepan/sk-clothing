@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.section-heading {
+  @apply my-5 w-fit border-l-4 border-primary pl-3 text-3xl font-semibold uppercase;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

@@ -1,5 +1,4 @@
 import { TProduct } from '@/types'
-import { StarFilledIcon } from '@radix-ui/react-icons'
 
 // uuidgen | tr 'A-Z' 'a-z'
 export const products: TProduct[] = [
@@ -17,7 +16,7 @@ export const products: TProduct[] = [
       {
         color: '#457E51',
         imageURL: '/products/hat_green.png',
-        bestSeller: true,
+        isBestSeller: true,
       },
       {
         color: '#EBE2D7',
@@ -35,7 +34,7 @@ export const products: TProduct[] = [
       {
         color: '#00DFE3',
         imageURL: '/products/hoodie_aqua.png',
-        bestSeller: true,
+        isBestSeller: true,
       },
       {
         color: '#6100DA',
@@ -48,6 +47,7 @@ export const products: TProduct[] = [
       {
         color: '#DFDE00',
         imageURL: '/products/hoodie_yellow.png',
+        isNew: true,
       },
     ],
   },
@@ -61,6 +61,7 @@ export const products: TProduct[] = [
       {
         color: '#565656',
         imageURL: '/products/jacket_gray.png',
+        isNew: true,
       },
       {
         color: '#FFB0FE',
@@ -80,17 +81,19 @@ export const products: TProduct[] = [
     desc: 'T-shirts, often seen as simple garments, offer more than meets the eye. They serve as versatile canvases for self-expression, allowing wearers to showcase their personality with ease. Whether adorned with bold graphics, subtle designs, or vibrant colors, t-shirts effortlessly blend simplicity with style. With their timeless appeal and comfortable fit, they stand as essential pieces in any wardrobe, embodying the perfect balance between simplicity and sophistication.',
     imageVariants: [
       {
+        color: '#EC0001',
+        imageURL: '/products/tshirt_red.png',
+        isBestSeller: true,
+      },
+      {
         color: '#0FB800',
         imageURL: '/products/tshirt_green.png',
+        isBestSeller: true,
+        isNew: true,
       },
       {
         color: '#E402E4',
         imageURL: '/products/tshirt_pink.png',
-      },
-      {
-        color: '#EC0001',
-        imageURL: '/products/tshirt_red.png',
-        bestSeller: true,
       },
     ],
   },
@@ -104,6 +107,7 @@ export const products: TProduct[] = [
       {
         color: '#9FF8BC',
         imageURL: '/products/sandals_green.png',
+        isNew: true,
       },
       {
         color: '#F8F8F8',

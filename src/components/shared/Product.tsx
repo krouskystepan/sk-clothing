@@ -11,16 +11,22 @@ export default function Product({
   price,
   rating,
   imageURL,
-  bestSeller,
+  isBestSeller,
+  isNew,
 }: TProductCard) {
   return (
     <Card className="group relative min-w-[300px] !p-0">
-      {bestSeller && (
+      {isBestSeller && (
+        <Badge className="absolute right-7 top-[-12.5px] h-[25px] !bg-red-600 uppercase text-white">
+          BestSeller
+        </Badge>
+      )}
+      {isNew && (
         <Badge
           variant="destructive"
-          className="absolute right-7 top-[-12.5px] h-[25px] uppercase"
+          className="hover: absolute left-7 top-[-12.5px] h-[25px] !bg-blue-700 uppercase text-white"
         >
-          BestSeller
+          New
         </Badge>
       )}
       <CardContent>
@@ -48,7 +54,7 @@ export default function Product({
 
         <Button
           variant="secondary"
-          className="transition-all duration-200 hover:bg-primary hover:text-secondary"
+          className="focus:border-teal !ring-0 transition-all duration-200 hover:bg-primary hover:text-secondary focus:bg-primary focus:text-secondary"
         >
           Buy now
         </Button>

@@ -1,6 +1,7 @@
 'use server'
 
 import { products } from '@/constants/products'
+import { getXofType } from '../utils'
 
 export const getProductById = async (id: string) => {
   return products.find((product) => product.id === id)
@@ -9,7 +10,7 @@ export const getProductById = async (id: string) => {
 export const getBestSellers = async () => {
   const bestSellers = products.flatMap((product) =>
     product.imageVariants
-      .filter((variant) => variant.bestSeller)
+      .filter((variant) => variant.isBestSeller)
       .map(({ color, ...rest }) => ({
         name: product.name,
         price: product.price,
@@ -18,17 +19,20 @@ export const getBestSellers = async () => {
       }))
   )
 
-  // Deduplicate the bestSellers array based on the product name
-  const uniqueBestSellers = []
-  const seenNames = new Set()
+  return getXofType(bestSellers, 3)
+}
 
-  for (const seller of bestSellers) {
-    if (!seenNames.has(seller.name)) {
-      uniqueBestSellers.push(seller)
-      seenNames.add(seller.name)
-    }
-  }
+export const getNewProducts = async () => {
+  const newProducts = products.flatMap((product) =>
+    product.imageVariants
+      .filter((variant) => variant.isNew)
+      .map(({ color, ...rest }) => ({
+        name: product.name,
+        price: product.price,
+        rating: product.rating,
+        ...rest,
+      }))
+  )
 
-  // Return only the top 3 unique best sellers
-  return uniqueBestSellers.slice(0, 3)
+  return getXofType(newProducts, 2)
 }

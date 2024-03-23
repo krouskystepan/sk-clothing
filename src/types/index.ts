@@ -7,7 +7,8 @@ export type TProduct = {
   imageVariants: {
     color: string
     imageURL: string
-    bestSeller?: boolean
+    isBestSeller?: boolean
+    isNew?: boolean
   }[]
 }
 
@@ -15,6 +16,7 @@ export type TProductCard = {
   name?: string
   price: number
   rating: number
-  bestSeller?: boolean
+  isBestSeller?: boolean
+  isNew?: boolean
   imageURL: string
 }
