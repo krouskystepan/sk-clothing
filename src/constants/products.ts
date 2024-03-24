@@ -115,6 +115,14 @@ export const products: TProduct[] = [
         isNew: true,
       },
       {
+        color: '#C7F8F8',
+        imageURL: '/products/sandals_blue.png',
+      },
+      {
+        color: '#F9C8F9',
+        imageURL: '/products/sandals_pink.png',
+      },
+      {
         color: '#F8F8F8',
         imageURL: '/products/sandals_white.png',
       },

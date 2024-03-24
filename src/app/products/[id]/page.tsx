@@ -3,6 +3,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import { StarFilledIcon } from '@radix-ui/react-icons'
+import { Button } from '@/components/ui/button'
+import AddToCartButton from '@/components/AddToCartButton'
 
 type SearchParams = {
   color: string
@@ -29,8 +31,8 @@ export default async function ProductView({
   if (!product || !selectedVariant || !selectedSize) return notFound()
 
   return (
-    <section className="container my-auto grid w-full grid-cols-1 gap-10 lg:grid-cols-2">
-      <div className="relative columns-2">
+    <section className="container my-10 grid w-full grid-cols-1 gap-10 md:grid-cols-2">
+      <div className="relative h-[400px] columns-2 md:h-auto">
         {/* //TODO: Set correct sizes */}
         <Image
           src={selectedVariant?.imageURL}
@@ -89,6 +91,13 @@ export default async function ProductView({
               <p className="mt-4 text-sm text-gray-800">{product.desc}</p>
             </div>
           </div>
+          <AddToCartButton
+            id={product.id}
+            name={product.name}
+            size={selectedSize}
+            color={selectedVariant?.color}
+            price={product.price}
+          />
         </div>
       </div>
     </section>

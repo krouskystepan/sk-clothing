@@ -27,7 +27,7 @@ export default function Hero() {
           src="/cover-image.jpg"
           fill
           alt="Hero image"
-          className="object-cover opacity-50"
+          className="object-cover opacity-80"
         />
       </div>
     </div>

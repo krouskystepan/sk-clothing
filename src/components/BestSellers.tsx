@@ -1,5 +1,5 @@
 import { getBestSellers } from '@/lib/actions/products.action'
-import ProductCard from './shared/ProductCard'
+import ProductCard from './ProductCard'
 
 export default async function BestSellers() {
   const bestSellers = await getBestSellers()

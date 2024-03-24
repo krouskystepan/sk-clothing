@@ -2,8 +2,11 @@ import Image from 'next/image'
 import { Button } from '../ui/button'
 import { navLinks } from '@/constants'
 import Link from 'next/link'
+import CartNavButton from '../CartNavButton'
 
 export default function Navbar() {
+  const isSignIn = true
+
   return (
     <header className="sticky left-0 top-0 z-10 bg-white p-4 shadow-sm">
       <nav className="mx-auto flex max-w-5xl items-center justify-between">
@@ -25,7 +28,7 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
-        <Button>Sign In</Button>
+        {isSignIn ? <CartNavButton /> : <Button>Sign In</Button>}
       </nav>
     </header>
   )

@@ -24,3 +24,11 @@ export type TProductCard = {
   isNew?: boolean
   imageURL: string
 }
+
+export type CartItem = {
+  id: string
+  name: string
+  color: string
+  price: number
+  size: string | number
+}

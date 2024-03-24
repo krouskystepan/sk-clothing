@@ -2,9 +2,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import type { TProductCard } from '@/types'
-import { Card, CardContent, CardFooter } from '../ui/card'
-import { Badge } from '../ui/badge'
-import { Button } from '../ui/button'
+import { Card, CardContent, CardFooter } from './ui/card'
+import { Badge } from './ui/badge'
+import { Button } from './ui/button'
 
 import { StarFilledIcon } from '@radix-ui/react-icons'
 

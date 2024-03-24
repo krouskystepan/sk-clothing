@@ -1,4 +1,4 @@
-import ProductCard from '@/components/shared/ProductCard'
+import ProductCard from '@/components/ProductCard'
 import { getAllProducts } from '@/lib/actions/products.action'
 
 export default async function Products() {
