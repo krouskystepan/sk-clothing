@@ -1,11 +1,6 @@
 'use client'
 
-import {
-  addItem,
-  removeItem,
-  updateQuantity,
-  TCartItem,
-} from '@/store/cartSlice'
+import { removeItem, updateQuantity, TCartItem } from '@/store/cartSlice'
 import { useDispatch, useSelector } from 'react-redux'
 
 export default function Item() {

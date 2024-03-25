@@ -6,14 +6,16 @@ import Link from 'next/link'
 import { useSelector } from 'react-redux'
 
 export default function CartNavButton() {
-  const cartItems = useSelector((state: { cart: TCartItem[] }) => state.cart)
+  const totalQuantity = useSelector((state: { cart: TCartItem[] }) =>
+    state.cart.reduce((total, item) => total + item.quantity, 0)
+  )
 
   return (
     <Link className="relative cursor-pointer py-2" href={'/cart'}>
-      {cartItems.length > 0 && (
+      {totalQuantity > 0 && (
         <div className="absolute -top-1 left-3">
           <p className="flex size-1 items-center justify-center rounded-full bg-red-500 p-[10px] text-xs text-white">
-            {cartItems.length}
+            {totalQuantity}
           </p>
         </div>
       )}

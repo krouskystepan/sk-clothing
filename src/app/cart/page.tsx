@@ -5,19 +5,8 @@ export default function CartPage() {
 
   // const cartItems = JSON.parse(cart)
 
-  console.log()
-
   return (
     <>
-      {/* <div>
-        {cartItems.map((item: any, index: any) => (
-          <div key={index}>
-            <p>
-              Name: {item.name} {index}
-            </p>
-          </div>
-        ))}
-      </div> */}
       <Item />
     </>
   )
