@@ -12,16 +12,16 @@ export const products: TProduct[] = [
     imageVariants: [
       {
         color: '#AAA493',
-        imageURL: '/products/hat_gray.png',
+        imageURL: '/products/hat_gray.webp',
       },
       {
         color: '#457E51',
-        imageURL: '/products/hat_green.png',
+        imageURL: '/products/hat_green.webp',
         isBestSeller: true,
       },
       {
         color: '#EBE2D7',
-        imageURL: '/products/hat_white.png',
+        imageURL: '/products/hat_white.webp',
       },
     ],
   },
@@ -35,20 +35,20 @@ export const products: TProduct[] = [
     imageVariants: [
       {
         color: '#00DFE3',
-        imageURL: '/products/hoodie_aqua.png',
+        imageURL: '/products/hoodie_aqua.webp',
         isBestSeller: true,
       },
       {
         color: '#6100DA',
-        imageURL: '/products/hoodie_purple.png',
+        imageURL: '/products/hoodie_purple.webp',
       },
       {
         color: '#F4F4F4',
-        imageURL: '/products/hoodie_white.png',
+        imageURL: '/products/hoodie_white.webp',
       },
       {
         color: '#DFDE00',
-        imageURL: '/products/hoodie_yellow.png',
+        imageURL: '/products/hoodie_yellow.webp',
         isNew: true,
       },
     ],
@@ -63,16 +63,16 @@ export const products: TProduct[] = [
     imageVariants: [
       {
         color: '#565656',
-        imageURL: '/products/jacket_gray.png',
+        imageURL: '/products/jacket_gray.webp',
         isNew: true,
       },
       {
         color: '#FFB0FE',
-        imageURL: '/products/jacket_pink.png',
+        imageURL: '/products/jacket_pink.webp',
       },
       {
         color: '#F4F4F4',
-        imageURL: '/products/jacket_white.png',
+        imageURL: '/products/jacket_white.webp',
       },
     ],
   },
@@ -86,18 +86,18 @@ export const products: TProduct[] = [
     imageVariants: [
       {
         color: '#EC0001',
-        imageURL: '/products/tshirt_red.png',
+        imageURL: '/products/tshirt_red.webp',
         isBestSeller: true,
       },
       {
         color: '#0FB800',
-        imageURL: '/products/tshirt_green.png',
+        imageURL: '/products/tshirt_green.webp',
         isBestSeller: true,
         isNew: true,
       },
       {
         color: '#E402E4',
-        imageURL: '/products/tshirt_pink.png',
+        imageURL: '/products/tshirt_pink.webp',
       },
     ],
   },
@@ -111,20 +111,20 @@ export const products: TProduct[] = [
     imageVariants: [
       {
         color: '#9FF8BC',
-        imageURL: '/products/sandals_green.png',
+        imageURL: '/products/sandals_green.webp',
         isNew: true,
       },
       {
         color: '#C7F8F8',
-        imageURL: '/products/sandals_blue.png',
+        imageURL: '/products/sandals_blue.webp',
       },
       {
         color: '#F9C8F9',
-        imageURL: '/products/sandals_pink.png',
+        imageURL: '/products/sandals_pink.webp',
       },
       {
         color: '#F8F8F8',
-        imageURL: '/products/sandals_white.png',
+        imageURL: '/products/sandals_white.webp',
       },
     ],
   },

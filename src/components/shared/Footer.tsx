@@ -8,10 +8,10 @@ export default function Footer() {
         <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6">
           {footerLinks.map((footerLink) => (
             <div key={footerLink.title}>
-              <h2 className="mb-6 text-sm font-bold uppercase tracking-widest text-secondary">
+              <h2 className="mb-6 text-sm font-bold uppercase tracking-widest text-primary-foreground">
                 {footerLink.title}
               </h2>
-              <ul className="font-medium text-secondary">
+              <ul className="font-medium text-primary-foreground">
                 {footerLink.sub.map((link) => (
                   <li key={link.name} className="mb-4 w-fit hover:underline">
                     <Link href={link.path} target="_blank">
@@ -25,7 +25,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="flex justify-center pt-2">
-        <span className="text-sm text-secondary sm:text-center">
+        <span className="text-sm text-primary-foreground sm:text-center">
           Made by{' '}
           <Link
             href="https://krouskystepan.com"

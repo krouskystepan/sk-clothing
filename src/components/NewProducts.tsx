@@ -6,7 +6,7 @@ export default async function NewProducts() {
 
   return (
     <section className="mx-auto mb-10 mt-16 max-w-5xl">
-      <h3 className="section-heading">Explore new products</h3>
+      <h2 className="section-heading">Explore new products</h2>
       <div className="flex grow flex-wrap justify-center gap-5">
         {newProducts.map((product, index) => (
           <ProductCard

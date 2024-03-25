@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import { StarFilledIcon } from '@radix-ui/react-icons'
 import { Button } from '@/components/ui/button'
-import AddToCartButton from '@/components/AddToCartButton'
+import AddToCartButton from '@/components/cart/AddToCartButton'
 
 type SearchParams = {
   color: string

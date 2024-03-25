@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { Button } from '../ui/button'
 import { navLinks } from '@/constants'
 import Link from 'next/link'
-import CartNavButton from '../CartNavButton'
+import CartNavButton from '../cart/CartNavButton'
 
 export default function Navbar() {
   const isSignIn = true
@@ -11,7 +11,7 @@ export default function Navbar() {
     <header className="sticky left-0 top-0 z-10 bg-white p-4 shadow-sm">
       <nav className="mx-auto flex max-w-5xl items-center justify-between">
         <Image
-          src={'/logo.png'}
+          src={'/logo.webp'}
           width={50}
           height={50}
           alt="Logo"

@@ -22,9 +22,9 @@ export default function Hero() {
       </div>
       <div className="relative hidden w-1/2 max-w-[400px] overflow-hidden rounded-md md:block">
         <div className="size-full bg-black" />
-        {/* TODO: Set correct sizes */}
+        {/* //TODO: Set correct sizes */}
         <Image
-          src="/cover-image.jpg"
+          src="/cover-image.webp"
           fill
           alt="Hero image"
           className="object-cover opacity-80"

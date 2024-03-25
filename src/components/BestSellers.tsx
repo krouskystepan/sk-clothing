@@ -6,7 +6,7 @@ export default async function BestSellers() {
 
   return (
     <section className="mx-auto mt-20  max-w-5xl ">
-      <h3 className="section-heading">Buy our best-selling products</h3>
+      <h2 className="section-heading">Buy our best-selling products</h2>
       <div className="flex grow flex-wrap justify-center gap-5">
         {bestSellers.map((product, index) => (
           <ProductCard

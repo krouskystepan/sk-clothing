@@ -62,7 +62,7 @@ export default function ProductCard({
         >
           <Button
             variant="secondary"
-            className="!ring-0 transition-all duration-200 hover:bg-primary hover:text-secondary focus:bg-primary focus:text-secondary"
+            className="!ring-0 transition-all duration-200 hover:bg-primary hover:text-primary-foreground focus:bg-primary focus:text-primary-foreground"
           >
             Buy now
           </Button>
