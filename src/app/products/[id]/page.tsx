@@ -95,6 +95,7 @@ export default async function ProductView({
             id={product.id}
             name={product.name}
             size={selectedSize}
+            imageURL={selectedVariant?.imageURL}
             color={selectedVariant?.color}
             price={product.price}
           />

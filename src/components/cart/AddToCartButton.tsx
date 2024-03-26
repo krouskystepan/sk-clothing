@@ -8,6 +8,7 @@ import type { CartItem } from '@/types'
 export default function AddToCartButton({
   id,
   name,
+  imageURL,
   price,
   color,
   size,
@@ -18,6 +19,7 @@ export default function AddToCartButton({
     const newItem = {
       id: `${id} - ${color} - ${size}`,
       name,
+      imageURL,
       price,
       quantity: 1,
     }

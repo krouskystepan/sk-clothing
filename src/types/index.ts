@@ -30,5 +30,6 @@ export type CartItem = {
   name: string
   color: string
   price: number
+  imageURL: string
   size: string | number
 }

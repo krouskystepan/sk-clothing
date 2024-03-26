@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { Button } from './ui/button'
 import Image from 'next/image'
 
@@ -13,12 +14,11 @@ export default function Hero() {
           strive for the highest and fastest quality and delivery of our
           products.
         </p>
-        <Button
-          variant="default"
-          className="self-center px-7 py-5 md:self-start"
-        >
-          Shop now
-        </Button>
+        <Link href="/products" className="self-center md:self-start">
+          <Button variant="default" className="px-7 py-5">
+            Shop now
+          </Button>
+        </Link>
       </div>
       <div className="relative hidden w-1/2 max-w-[400px] overflow-hidden rounded-md md:block">
         <div className="size-full bg-black" />
