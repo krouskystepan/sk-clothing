@@ -50,9 +50,6 @@ export default function CartItems() {
                 </div>
                 <div className="flex flex-col items-center justify-between gap-3 py-3">
                   <div className="space-x-3">
-                    {/* <button onClick={() => handleRemoveFromCart(item.id)}>
-              Remove
-            </button> */}
                     <Button
                       variant={'outline'}
                       onClick={() =>
@@ -83,7 +80,7 @@ export default function CartItems() {
         </ul>
       ) : (
         <div className="flex flex-col gap-2">
-          <h3 className="text-lg">Your cart is empy</h3>
+          <h3 className="text-lg">Your cart is empty</h3>
           <Link href="/products">
             <Button variant="default" className="px-7 py-5">
               Shop now
