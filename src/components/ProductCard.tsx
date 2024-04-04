@@ -29,7 +29,7 @@ export default function ProductCard({
       {isNew && (
         <Badge
           variant="destructive"
-          className="hover: absolute left-7 top-[-12.5px] h-[25px] !bg-blue-700 uppercase text-white"
+          className="absolute left-7 top-[-12.5px] h-[25px] !bg-blue-700 uppercase text-white"
         >
           New
         </Badge>
@@ -48,7 +48,7 @@ export default function ProductCard({
       <CardFooter className="grid gap-4">
         <div className="flex justify-between text-lg font-semibold">
           <p>{name}</p>
-          <p>{price}$</p>
+          <p>${price}</p>
         </div>
 
         <div className="flex justify-center text-primary">

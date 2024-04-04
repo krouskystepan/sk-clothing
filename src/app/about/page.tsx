@@ -1,7 +1,8 @@
 export default function About() {
   return (
     <main className="mx-auto my-10 max-w-3xl px-6 text-center leading-6 tracking-wide">
-      <h3></h3>
+      {/* Todo */}
+      <h3 className="section-heading">About us</h3>
       <p>
         Established with a firm commitment to quality and innovation, SK
         Clothing has been a trailblazer in the fashion industry since our
