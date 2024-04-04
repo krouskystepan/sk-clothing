@@ -6,8 +6,10 @@ import { useDispatch, useSelector } from 'react-redux'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
+import { useRouter } from 'next/navigation'
 
 export default function CartPage() {
+  const router = useRouter()
   const dispatch = useDispatch()
   const [isOrderLoading, setIsOrderLoading] = useState(false)
 
@@ -33,16 +35,19 @@ export default function CartPage() {
         }
       })
 
-      const response = await fetch(`http://localhost:3000/api/checkout`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ products: modifiedCartItems }),
-      })
+      const response = await fetch(
+        `https://sk-clothing.vercel.app/api/checkout`,
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ products: modifiedCartItems }),
+        }
+      )
 
       if (response.ok) {
         const responseData = await response.json()
         if (responseData.url) {
-          window.location.href = responseData.url
+          router.push(responseData.url)
         }
       } else {
         // Handle error cases here
@@ -122,18 +127,22 @@ export default function CartPage() {
                 })}
               </ul>
 
-              <div className="flex flex-col items-center justify-between border-b border-secondary pb-6 pt-3 max-lg:mx-auto max-lg:max-w-lg md:flex-row md:items-center lg:px-6">
-                <p className="w-full text-2xl font-semibold leading-9 max-md:mb-4 max-md:text-center">
+              <div className="flex w-full flex-col items-center justify-between border-b border-secondary pb-6 pt-3 sm:flex-row sm:items-center lg:px-6">
+                <p className="mx-2 w-full text-2xl font-semibold leading-9 max-sm:mb-4 max-sm:text-center">
                   Subtotal
                 </p>
 
-                <p className="text-3xl font-bold text-primary">${totalPrice}</p>
+                <p className="mx-2 text-3xl font-bold text-primary">
+                  ${totalPrice}
+                </p>
               </div>
-              <div className="max-lg:mx-auto max-lg:max-w-lg">
+              <div className="mx-auto max-lg:max-w-lg">
                 <p className="mb-5 mt-6 text-center text-base font-normal leading-7 text-gray-500">
                   Shipping taxes, and discounts calculated at checkout
                 </p>
-
+                <p className="mx-auto mb-6 max-w-fit rounded-lg border-2 border-yellow-500 bg-yellow-100 px-4 py-2 text-sm uppercase text-yellow-500">
+                  Example card: 4242 4242 4242 4242
+                </p>
                 <Button
                   className={`w-full cursor-pointer rounded-full px-6 py-7 text-center text-lg font-semibold ${
                     isOrderLoading ? 'bg-primary/80' : ''

@@ -59,8 +59,6 @@ export const POST = async (request: Request) => {
     }
   }
 
-  console.log(JSON.stringify(stripeItems))
-
   const session = await stripe.checkout.sessions.create({
     line_items: stripeItems,
     mode: 'payment',
