@@ -61,6 +61,7 @@ export const POST = async (request: Request) => {
 
   const session = await stripe.checkout.sessions.create({
     line_items: stripeItems,
+    payment_method_types: ['card'],
     mode: 'payment',
     success_url: 'https://sk-clothing.vercel.app/cart/success',
     cancel_url: 'https://sk-clothing.vercel.app/cart/cancel',

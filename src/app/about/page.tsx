@@ -21,8 +21,8 @@ export default function About() {
         What sets us apart is our comprehensive approach to the manufacturing
         process. From the selection of premium materials to the final
         distribution of our products, we maintain strict quality control
-        measures to ensure that every piece bearing the SK Clothing label is a
-        testament to our commitment to excellence.
+        measures to ensure that every piece bearing the SK Clothing shop label
+        is a testament to our commitment to excellence.
         <br />
         <br />
         But our dedication to quality goes beyond just the garments themselves.
@@ -32,14 +32,14 @@ export default function About() {
         sustainable future for fashion.
         <br />
         <br />
-        At SK Clothing, we believe that fashion is more than just
+        At SK Clothing shop, we believe that fashion is more than just
         clothing—it&apos;s a form of self-expression, a reflection of
         individuality. That&apos;s why we&apos;re dedicated to creating
         collections that not only embody the latest trends but also empower our
         customers to embrace their unique sense of style.
         <br />
         <br />
-        Thank you for choosing SK Clothing. Join us on our journey as we
+        Thank you for choosing SK Clothing shop. Join us on our journey as we
         continue to push the boundaries of innovation and redefine the
         possibilities of fashion.
       </p>

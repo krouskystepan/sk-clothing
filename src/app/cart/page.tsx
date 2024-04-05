@@ -8,7 +8,7 @@ import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { useRouter } from 'next/navigation'
 
-export default function CartPage() {
+export default function Cart() {
   const router = useRouter()
   const dispatch = useDispatch()
   const [isOrderLoading, setIsOrderLoading] = useState(false)
@@ -49,11 +49,9 @@ export default function CartPage() {
         if (responseData.url) {
           router.push(responseData.url)
         }
-      } else {
-        // Handle error cases here
       }
     } catch (error) {
-      // Handle fetch errors
+      console.error(error)
     } finally {
       setIsOrderLoading(false)
     }

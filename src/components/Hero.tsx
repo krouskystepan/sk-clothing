@@ -7,7 +7,7 @@ export default function Hero() {
     <div className="mt-8 flex w-full justify-center gap-5 md:min-h-[400px] md:gap-10">
       <div className="flex flex-col items-start gap-5 md:w-1/2">
         <h1 className="mt-10 w-full text-center text-6xl font-bold md:text-left">
-          Welcome to SK Clothing
+          Welcome to SK Clothing shop
         </h1>
         <p className="text-center text-lg md:text-left">
           We are a shop that manufactures and procures everything ourselves. We

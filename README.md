@@ -1,8 +1,8 @@
-## SK Clothing Store
+## SK Clothing Shop
 
 ### About this project
 
- - 
+-
 
 ### How to run this project
 
