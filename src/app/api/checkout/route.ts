@@ -28,7 +28,7 @@ export const POST = async (request: Request) => {
             unit_amount: product.price * 100,
             currency: 'usd',
           },
-          images: [`https://sk-clothing.vercel.app${product.imageURL}`],
+          images: [`https://sk-clothing-shop.vercel.app${product.imageURL}`],
         })
       }
     }
@@ -51,7 +51,7 @@ export const POST = async (request: Request) => {
           unit_amount: product.price * 100,
           product_data: {
             name: product.name,
-            images: [`https://sk-clothing.vercel.app${product.imageURL}`],
+            images: [`https://sk-clothing-shop.vercel.app${product.imageURL}`],
           },
         },
         quantity: product?.quantity,
@@ -63,8 +63,8 @@ export const POST = async (request: Request) => {
     line_items: stripeItems,
     payment_method_types: ['card'],
     mode: 'payment',
-    success_url: 'https://sk-clothing.vercel.app/cart/success',
-    cancel_url: 'https://sk-clothing.vercel.app/cart/cancel',
+    success_url: 'https://sk-clothing-shop.vercel.app/cart/success',
+    cancel_url: 'https://sk-clothing-shop.vercel.app/cart/cancel',
   })
 
   return NextResponse.json({ url: session.url })

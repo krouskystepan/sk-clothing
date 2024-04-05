@@ -36,7 +36,7 @@ export default function Cart() {
       })
 
       const response = await fetch(
-        `https://sk-clothing.vercel.app/api/checkout`,
+        `https://sk-clothing-shop.vercel.app/api/checkout`,
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
