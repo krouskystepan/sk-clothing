@@ -36,11 +36,11 @@ export default function ProductCard({
       )}
       <CardContent>
         <div className="relative h-[300px] overflow-hidden rounded-xl bg-primary/[0.035] !p-0">
-          {/* //TODO: Set correct sizes */}
           <Image
             src={imageURL}
             alt="Product Image"
             fill
+            sizes="(min-width: 400px) 250px, calc(80vw - 54px)"
             className="bg-center object-contain"
           />
         </div>

@@ -33,11 +33,11 @@ export default async function ProductView({
   return (
     <section className="container my-10 grid w-full grid-cols-1 gap-10 md:grid-cols-2">
       <div className="relative h-[400px] columns-2 md:h-auto">
-        {/* //TODO: Set correct sizes */}
         <Image
           src={selectedVariant?.imageURL}
           alt={product.name}
           fill
+          sizes="(min-width: 1360px) 588px, (min-width: 780px) 44.64vw, calc(100vw - 64px)"
           className="size-full object-contain shadow-md"
         />
       </div>

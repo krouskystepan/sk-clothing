@@ -21,8 +21,7 @@ export default function Navbar() {
           width={50}
           height={50}
           alt="Logo"
-          // TODO: Set correct sizes
-          sizes="(max-width: 768px) 100vw, 33vw"
+          sizes="50px"
         />
         <ul className="hidden gap-5 p-2 text-xl sm:flex">
           {navLinks.map((link) => (

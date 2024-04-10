@@ -78,7 +78,12 @@ export default function Cart() {
                     >
                       <div className="flex flex-row justify-center">
                         <div className="relative size-28">
-                          <Image src={item.imageURL} alt="Product" fill />
+                          <Image
+                            src={item.imageURL}
+                            alt="Product"
+                            fill
+                            sizes="120px"
+                          />
                         </div>
                         <div className="ml-5 flex flex-col justify-center">
                           <h3 className="text-xl font-semibold">{item.name}</h3>
