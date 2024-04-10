@@ -15,7 +15,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky left-0 top-0 z-10 bg-white p-4 shadow-sm">
-      <nav className="mx-auto flex max-w-5xl items-center justify-between">
+      <nav className="mx-auto flex max-w-3xl items-center justify-between">
         <Image
           src={'/logo.webp'}
           width={50}

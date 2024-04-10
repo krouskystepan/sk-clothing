@@ -12,8 +12,8 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: 'SK - Clothing',
-  description: 'Just a simple clothing store',
+  title: 'SK - Clothing Shop',
+  description: 'Just a simple clothing shop',
 }
 
 export default function RootLayout({
