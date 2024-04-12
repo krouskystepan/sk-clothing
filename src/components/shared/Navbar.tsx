@@ -11,7 +11,6 @@ import { useState } from 'react'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
-  const isSignIn = true
 
   return (
     <header className="sticky left-0 top-0 z-10 bg-white p-4 shadow-sm">
@@ -34,7 +33,7 @@ export default function Navbar() {
           ))}
         </ul>
         <div className="flex items-center justify-center gap-4">
-          {isSignIn ? <CartNavButton /> : <Button>Sign In</Button>}
+          <CartNavButton />
           <button
             onClick={() => setIsOpen(true)}
             className={`block cursor-pointer sm:hidden`}
