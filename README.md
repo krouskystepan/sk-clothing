@@ -12,14 +12,14 @@ This is a simple project created without the need for a database, allowing anyon
 
 - Browse products
 - Add items to cart
-- Checkout process (optional: integrate with Stripe for payment processing)
+- Checkout process
 
 ## Technologies Used
 
 - React
 - Tailwind CSS
 - Next.js
-- Stripe (optional, for payment processing)
+- Stripe
 
 ## How to run this project
 
