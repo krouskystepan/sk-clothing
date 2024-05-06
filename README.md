@@ -17,8 +17,9 @@ This is a simple project created without the need for a database, allowing anyon
 ## Technologies Used
 
 - React
-- Tailwind CSS
 - Next.js
+- Shadcn
+- Tailwind CSS
 - Stripe
 
 ## How to run this project
